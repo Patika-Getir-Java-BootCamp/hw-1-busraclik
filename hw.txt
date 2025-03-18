@@ -1,0 +1,99 @@
+1) Why we need to use OOP? Some major OOP languages?
+
+OOP allows us to model anything that exists in the real world. In fact, I can say that this gives us the opportunity
+to define the type we want.Thanks to the basic principles of OOP, we can create a more organized structure by
+reducing complexity. This provides us with both ease of maintenance and debugging.By focusing on reusability
+we can avoid code duplication.OOP gives us the chance to build more flexible and reliable structures.
+Therefore, OOP meets most of our needs.
+
+Java, C#, Python, C++ are the major languages of OOP.
+
+2) Interface vs Abstract class?
+
+Abstract Classes hold common properties and behaviors together. An interface defines the methods that a class
+must implement, creating a type of contract. While a class can inherit from only one abstract class, it can
+implement more than one interface. In abstract class methods and properties can have any access modifier whereas in
+interface methods and properties are implicitly public.
+
+3) Why we need equals and hashcode? When to override?
+
+The equals() and hashcode() are the two methods for comparing objects. Objects that are equal according to the equals()
+function must have the same hashCode() function to ensure correct behavior. When overriding equals(), we must also
+override hashCode() to maintain consistency. We override these methods for comparison.
+
+4) Diamond problem in Java? How to fix it?
+
+When we want to solve a problem with direct inheritance without using interfaces, the diamond problem, which we can
+call the mixing of methods, occurs. This problem is solved by using interfaces.
+
+5) Why we need Garbage Collector? How does it run?
+
+Garbage Collector reclaims objects that are no longer being used, clears their memory, and keeps the memory available
+for future allocations. Frees us from having to manually release memory.
+
+6) Java "static" keyword usage?
+
+The static keyword makes the structure it is used belong to the class. Static class elements become common elements
+of all objects. Every change made in statics affects all objects and is seen by all objects. They can be called with
+class without being an object. It can be used in static variable, static method, static block and static class forms.
+
+7) Immutability means? Where, How and Why to use it?
+
+An object is considered immutable if its state cannot be changed after it is created. Immutable objects have a fixed
+state, meaning their properties cannot be modified. Immutability is used to prevent side effects, especially in
+functional programming. In multi-threaded environments, immutable objects are thread-safe and eliminate the need for
+synchronization.We can do this using the "final" keyword.In this way, we can write more secure and stable code,
+debug more easily, and achieve better performance.
+
+8) Composition and Aggregation means and differences?
+
+A composition relationship is a special type of relationship between classes on which a class depends. In this relationship, the
+parent class can exist without the other classes it depends on, but the classes it depends on cannot exist without
+the parent class. We can call the situation in which the owned object can exist independently of the owning object
+Aggregation. There is a weaker attachment here.
+
+9) Cohesion and Coupling means and differences?
+
+Cohesion refers to the degree to which elements within a module work together to fulfill a single, well-defined
+purpose. High cohesion means that elements are closely related and focused on a single purpose, while low cohesion
+means that elements are loosely related and serve multiple purposes. Coupling refers to the degree of interdependence
+between software modules. High coupling means that modules are closely connected and changes in one module may
+affect other modules. Low coupling means that modules are independent, and changes in one module have little impact
+on other modules. Cohesion is the degree to which a class is focused within itself, while coupling is the degree to
+which classes are dependent on each other.
+
+10) Heap and Stack means and differences?
+
+Heap and Stack are two different areas in memory where data is stored. One of the most important differences between Heap and Stack is
+that in Heap, data is stored in a mixed manner, while in Stack, it works in increasing or decreasing address logic. Accordingly,
+accessing data in Heap is a more costly process than accessing data in Stack. Another difference is that while data in Stack is
+deleted immediately, data in Heap is subject to Garbage Collector algorithm.
+
+11) Exception means? Type of Exceptions?
+
+An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
+There are generally two types of exceptions: Checked Exception and Unchecked Exception. A checked exception is an exception that is
+checked by the compiler at compilation-time, these are also called as compile time exceptions. An unchecked exception is an exception
+that occurs at the time of execution. These are also called as Runtime Exceptions. (Note: Errors are usually related to system
+level problems. Errors are not exceptions at all.)
+
+12) How to summarize 'clean code' as short as possible?
+
+It is to write code in a clear, maintainable and readable way that everyone can understand. It is to be able to easily understand
+the code "we wrote" even after years :)
+
+13) What is method of hiding in Java?
+
+Method hiding can be defined as, if a subclass defines a static method with the same signature as a static method in the super class,
+in such a case, the method in the subclass hides the one in the superclass. This is known as method hiding. It happens because static
+methods are resolved at compile time.
+
+14) What is the difference between abstraction and polymorphism in Java?
+
+Abstraction makes it easier to deal with complex systems by focusing on hiding implementation details and exposing only what
+is necessary. Abstraction is typically achieved using abstract classes and interfaces. Polymorphism means "many forms." It allows
+objects of different classes to be treated as objects of a common superclass.(I can say that the ability of an object to take many forms).
+Compile-time polymorphism also known as static polymorphism, it is achieved through method overloading and operator overloading.
+The method to be executed is determined at compile time. Runtime polymorphism also known as dynamic polymorphism, it is achieved
+through method overriding.
+
